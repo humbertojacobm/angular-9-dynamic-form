@@ -28,7 +28,7 @@ export class QuestionService {
       new TextboxQuestion({
         key: 'firstName',
         label: 'First name',
-        value: 'Bombasto',
+        value: 'Humberto',
         required: true,
         order: 1
       }),
@@ -38,6 +38,25 @@ export class QuestionService {
         label: 'Email',
         type: 'email',
         order: 2
+      }),
+
+      new TextboxQuestion({
+        key: 'lasName',
+        label: 'Last name',
+        value: 'Mori',
+        required: true,
+        order: 4
+      }),
+      new DropdownQuestion({
+        key: 'career',
+        label: 'career description',
+        options: [
+          {key: '1',  value: 'Engineer'},
+          {key: '2',  value: 'Doctor'},
+          {key: '3',   value: 'Lawyer'},
+          {key: '4', value: 'Business'}
+        ],
+        order: 5
       })
     ];
 
